@@ -1,3 +1,3 @@
 <?php
-namespace PhalconSkeletons\Models\Services\Exceptions;
+namespace Models\Services\Exceptions;
 class InvalidServiceException extends \Exception {}

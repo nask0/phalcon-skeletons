@@ -1,6 +1,6 @@
 <?php
-namespace PhalconSkeletons\Models\Services\Service;
-use PhalconSkeletons\Models\Repositories\Repositories as Repositories;
+namespace Models\Services\Service;
+use Models\Repositories\Repositories as Repositories;
 
 class User
 {

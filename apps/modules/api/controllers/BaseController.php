@@ -1,16 +1,11 @@
 <?php
-namespace PhalconSkeletons\Modules\Api\Controllers;
+namespace Modules\Api\Controllers;
 
 use Phalcon\Mvc\Controller;
 
 class BaseController extends Controller
 {
-    public function beforeExecuteRoute(\Phalcon\Mvc\Dispatcher $dispatcher)
-    {
-        // $this->response->setContentType('application/json', 'UTF-8');
-        // var_dump($dispatcher, get_class_methods($dispatcher), get_class_methods($response));
-        // die('beforeExecuteRoute');
-    }
+    public function beforeExecuteRoute(\Phalcon\Mvc\Dispatcher $dispatcher) {}
     
     public function afterExecuteRoute(\Phalcon\Mvc\Dispatcher $dispatcher)
     {

@@ -1,10 +1,10 @@
 <?php
-namespace PhalconSkeletons\Modules\Api;
+namespace Modules\Api;
 
 use Phalcon\Loader;
 use Phalcon\Mvc\View;
 use Phalcon\Mvc\Router;
-use \Phalcon\Mvc\Dispatcher;
+use Phalcon\Mvc\Dispatcher;
 use Phalcon\Mvc\ModuleDefinitionInterface;
 
 class Module implements ModuleDefinitionInterface
@@ -16,12 +16,12 @@ class Module implements ModuleDefinitionInterface
     {
         $loader = new Loader();
         $loader->registerNamespaces(array(
-            APP_NAMESPACE . '\Modules\Api\Controllers' => __DIR__ . '/controllers/',
+            'Modules\Api\Controllers' => __DIR__ . '/controllers/',
 
             // registering global models
-            APP_NAMESPACE . '\Models\Entities' => PATH_MODELS . 'entities' . DIRECTORY_SEPARATOR,
-            APP_NAMESPACE . '\Models\Services' => PATH_MODELS . 'services' . DIRECTORY_SEPARATOR,
-            APP_NAMESPACE . '\Models\Repositories' => PATH_MODELS . 'repositories' . DIRECTORY_SEPARATOR,
+            '\Models\Entities' => PATH_MODELS . 'entities' . DIRECTORY_SEPARATOR,
+            '\Models\Services' => PATH_MODELS . 'services' . DIRECTORY_SEPARATOR,
+            '\Models\Repositories' => PATH_MODELS . 'repositories' . DIRECTORY_SEPARATOR,
         ))
         ->register();
     }
@@ -35,7 +35,7 @@ class Module implements ModuleDefinitionInterface
     {
         $di->set('dispatcher', function() {
             $dispatcher = new Dispatcher();
-            $dispatcher->setDefaultNamespace(APP_NAMESPACE . '\Modules\Api\Controllers');
+            $dispatcher->setDefaultNamespace('Modules\Api\Controllers');
             return $dispatcher;
         });
 
@@ -46,20 +46,8 @@ class Module implements ModuleDefinitionInterface
             $view = new View();
             // $view->setViewsDir(__DIR__ . '/views/');
             $view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_NO_RENDER);
+            $view->disable();
             return $view;
         };
-
-        /**
-         * Database connection is created based in the parameters defined in the configuration file
-
-        $di['db'] = function () use ($config) {
-            return new DbAdapter(array(
-                "host" => $config->database->host,
-                "username" => $config->database->username,
-                "password" => $config->database->password,
-                "dbname" => $config->database->dbname
-            ));
-        };
-        **/
     }
 }

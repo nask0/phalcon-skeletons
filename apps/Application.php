@@ -7,7 +7,7 @@
 namespace PhalconSkeletons;
 
 // Services are globally registered in this file
-use Phalcon\Exception;
+use Phalcon\Exception as PhalconException;
 use Phalcon\Loader;
 use Phalcon\Mvc\Router;
 use Phalcon\DI\FactoryDefault;
@@ -63,7 +63,7 @@ class Application extends \Phalcon\Mvc\Application
                  ->handle()
                  ->send();
         } catch(\Exception $e) {
-            throw new \Phalcon\Exception('Unable to load application : '.$e->getMessage());
+            throw new PhalconException('Unable to load application : '.$e->getMessage());
         }
     }
 
@@ -245,7 +245,7 @@ class Application extends \Phalcon\Mvc\Application
     private function _loadModules()
     {
         if ( empty($this->_appConfig->application->modules) ) {
-            throw new \Phalcon\Exception('Unable to register any modules. Check your modules folder and config.');
+            throw new PhalconException('Unable to register any modules. Check your modules folder and config.');
         }
 
         try {
@@ -254,7 +254,7 @@ class Application extends \Phalcon\Mvc\Application
                 if ( !$moduleDir->isDot() && $moduleDir->isDir() ) {
                     $moduleName = $moduleDir->getFilename();
                     if ( (isset($moduleName)) && true === $this->_appConfig->application->modules[$moduleName]) {
-                        $className = APP_NAMESPACE .'\\Modules' . '\\'. \Phalcon\Text::camelize($moduleName) . '\\Module';
+                        $className = '\\Modules' . '\\'. \Phalcon\Text::camelize($moduleName) . '\\Module';
                         $classPath = PATH_MODULES . $moduleName . DIRECTORY_SEPARATOR . 'Module.php';
                         if ( !file_exists($classPath) ) {
                             throw new \Phalcon\Exception('Unable to load class file '.$classPath.' for module '.$className);
@@ -269,17 +269,23 @@ class Application extends \Phalcon\Mvc\Application
             }
 
             if ( empty($this->_modulesConfig) ) {
-                throw new \Phalcon\Exception('There is no modules configured.');
+                throw new PhalconException('There is no modules configured.');
             }
 
             $this->registerModules($this->_modulesConfig);
             return $this;
         } catch (\Exception $e) {
             // @todo: log
-            throw new \Phalcon\Exception('Error occured while registering modules configuration : '. $e->getMessage());
+            throw new PhalconException('Error occured while registering modules configuration : '. $e->getMessage());
         }
     }
 
+    /**
+     * Set auto loading
+     *
+     * @return object \Phalcon\Mvc\Application
+     * @todo
+     */
     private function _setAutoload()
     {
         $loader = new Loader();

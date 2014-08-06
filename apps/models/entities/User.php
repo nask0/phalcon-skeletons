@@ -1,5 +1,5 @@
 <?php
-namespace PhalconSkeletons\Models\Entities;
+namespace Models\Entities;
 
 use Phalcon\Mvc\Model\Validator\Email as Email;
 

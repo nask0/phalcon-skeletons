@@ -1,3 +1,3 @@
 <?php
-namespace PhalconSkeletons\Models\Repositories\Exceptions;
+namespace Models\Repositories\Exceptions;
 class InvalidRepositoryException extends \Exception {}

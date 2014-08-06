@@ -1,7 +1,7 @@
 <?php
-namespace PhalconSkeletons\Modules\Frontend\Controllers;
+namespace Modules\Frontend\Controllers;
 
-use \PhalconSkeletons\Models\Services\Services as Services;
+use Models\Services\Services as Services;
 
 class IndexController extends ControllerBase
 {

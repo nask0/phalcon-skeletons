@@ -1,7 +1,7 @@
 <?php
-namespace PhalconSkeletons\Models\Repositories\Repository;
+namespace Models\Repositories\Repository;
 
-use PhalconSkeletons\Models\Entities\User as EntityUser;
+use Models\Entities\User as EntityUser;
 
 class User
 {
