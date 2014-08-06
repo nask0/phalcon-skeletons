@@ -105,8 +105,6 @@ class Application extends \Phalcon\Mvc\Application
 
             $this->_debug = false;
         }
-
-        throw new \Exception('asdasdaaaaaaaaaaaaaaaaaaaaaa');
     }
 
     /**
