@@ -1,0 +1,8 @@
+Understand how DI works and how is implemented in Phalcon : 
+    - http://docs.phalconphp.com/en/latest/reference/di.html
+    
+    --
+    Not bad idea, bad implementation :
+        - https://gist.github.com/nesbert/3701633#L9
+        - https://gist.github.com/nesbert/3701633#L81
+        - http://forum.phalconphp.com/discussion/22/the-best-way-for-json-response-
