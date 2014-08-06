@@ -9,25 +9,25 @@ class User extends \Phalcon\Mvc\Model
      *
      * @var integer
      */
-    protected $iduser;
-
-    /**
-     *
-     * @var string
-     */
-    protected $name;
-     
-    /**
-     *
-     * @var string
-     */
-    protected $username;
+    protected $id;
 
     /**
      *
      * @var string
      */
     protected $email;
+     
+    /**
+     *
+     * @var string
+     */
+    protected $nickname;
+
+    /**
+     *
+     * @var string
+     */
+    protected $fullname;
      
     /**
      *
@@ -47,10 +47,9 @@ class User extends \Phalcon\Mvc\Model
      * @param integer $iduser
      * @return $this
      */
-    public function setIduser($iduser)
+    public function setId($userId)
     {
-        $this->iduser = $iduser;
-
+        $this->$userId = (int) $userId;
         return $this;
     }
 
@@ -60,10 +59,9 @@ class User extends \Phalcon\Mvc\Model
      * @param string $name
      * @return $this
      */
-    public function setName($name)
+    public function setNickname($nickname)
     {
-        $this->name = $name;
-
+        $this->$nickname = (string) $nickname;
         return $this;
     }
 
@@ -73,10 +71,9 @@ class User extends \Phalcon\Mvc\Model
      * @param string $username
      * @return $this
      */
-    public function setUsername($username)
+    public function setFullname($fullname)
     {
-        $this->username = $username;
-
+        $this->fullname = (string) $fullname;
         return $this;
     }
 
@@ -89,7 +86,6 @@ class User extends \Phalcon\Mvc\Model
     public function setEmail($email)
     {
         $this->email = $email;
-
         return $this;
     }
 
@@ -114,8 +110,7 @@ class User extends \Phalcon\Mvc\Model
      */
     public function setCreated($created)
     {
-        $this->created = $created;
-
+        $this->created = (string) $created;
         return $this;
     }
 
@@ -124,9 +119,9 @@ class User extends \Phalcon\Mvc\Model
      *
      * @return integer
      */
-    public function getIduser()
+    public function getId()
     {
-        return $this->iduser;
+        return $this->id;
     }
 
     /**
@@ -134,9 +129,9 @@ class User extends \Phalcon\Mvc\Model
      *
      * @return string
      */
-    public function getName()
+    public function getNickname()
     {
-        return $this->name;
+        return $this->nickname;
     }
 
     /**
@@ -144,7 +139,7 @@ class User extends \Phalcon\Mvc\Model
      *
      * @return string
      */
-    public function getUsername()
+    public function getFullname()
     {
         return $this->username;
     }
@@ -200,6 +195,6 @@ class User extends \Phalcon\Mvc\Model
 
     public function getSource()
     {
-        return 'user';
+        return 'users';
     }
 }

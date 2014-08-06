@@ -68,3 +68,1066 @@
 [Wed, 06 Aug 14 21:59:22 +0300][DEBUG] * Register application modules
 [Wed, 06 Aug 14 21:59:22 +0300][DEBUG] * Application bootstrap complete
 [Wed, 06 Aug 14 21:59:22 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] ** Dependance Injector is ready to use
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Register application modules
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Application bootstrap complete
+[Wed, 06 Aug 14 22:15:15 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] ** Dependance Injector is ready to use
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Register application modules
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Application bootstrap complete
+[Wed, 06 Aug 14 22:15:16 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] ** Dependance Injector is ready to use
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Register application modules
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Application bootstrap complete
+[Wed, 06 Aug 14 22:27:40 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] ** Dependance Injector is ready to use
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Register application modules
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Application bootstrap complete
+[Wed, 06 Aug 14 22:29:04 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] ** Dependance Injector is ready to use
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Register application modules
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Application bootstrap complete
+[Wed, 06 Aug 14 22:29:06 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] ** Dependance Injector is ready to use
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Register application modules
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Application bootstrap complete
+[Wed, 06 Aug 14 22:29:23 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] ** Dependance Injector is ready to use
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Register application modules
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Application bootstrap complete
+[Wed, 06 Aug 14 22:29:30 +0300][DEBUG] * Processing request and return response
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:47:36 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:52:43 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] 
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 22:52:59 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:12:15 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:12:42 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:12:52 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:13:14 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] ** Setting up config service [appConfig] in DI
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:13:57 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:32:50 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:34:21 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:34:22 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:34:35 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:34:55 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:39:27 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:39:53 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:40:10 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:41:37 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:45:49 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:46:04 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:46:07 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:46:08 +0300][DEBUG] ** Setting up router service [router] in DI
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] * Registered application directories :
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] 
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] * Initializing autoloaders
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] * Initializing Dependency Injector
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] ** Setting up session service [session] in DI
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] ** Setting up database service [db] in DI
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] ** Setting up url service [url] in DI
+[Wed, 06 Aug 14 23:47:20 +0300][DEBUG] ** Setting up router service [router] in DI
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:00:38 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:27:02 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:31:54 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:37:00 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:37:34 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:42:08 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:44:10 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:45:01 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:45:17 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:52:06 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:52:07 +0300][DEBUG] 
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 00:58:43 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:00:55 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:01:04 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:01:07 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:01:11 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:02:23 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:03:52 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:06:07 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:09:41 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:10:01 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:10:02 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:10:03 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:11:07 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:11:20 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:11:21 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:27:36 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:27:37 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:27:48 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:27:49 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:29:15 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:29:40 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:32:58 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:36:27 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:36:30 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:36:33 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:36:38 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:41:49 +0300][DEBUG] 
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG] * Application bootstrap begin [PhalconSkeletons\Application]
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG] * Registered application namespace: PhalconSkeletons
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG] * Registered application root path: /var/www/html/phalcon-skeletons/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG] * Registered application directories :
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG]     apps : /var/www/html/phalcon-skeletons/apps/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG]     models : /var/www/html/phalcon-skeletons/apps/models/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG]     modules : /var/www/html/phalcon-skeletons/apps/modules/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG]     data : /var/www/html/phalcon-skeletons/data/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG]     logs : /var/www/html/phalcon-skeletons/data/logs/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG]     library : /var/www/html/phalcon-skeletons/library/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG]     vendor : /var/www/html/phalcon-skeletons/vendor/
+[Thu, 07 Aug 14 01:41:53 +0300][DEBUG] 

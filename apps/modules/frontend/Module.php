@@ -14,7 +14,15 @@ class Module implements ModuleDefinitionInterface
     public function registerAutoloaders()
     {
         $loader = new Loader();
-        $loader->registerNamespaces(array(APP_NAMESPACE . '\Modules\Frontend\Controllers' => __DIR__ . '/controllers/'))
+        $loader->registerNamespaces(
+                array(
+                    APP_NAMESPACE . '\Modules\Frontend\Controllers' => __DIR__ . '/controllers/',
+
+                    // registering global models
+                    APP_NAMESPACE . '\Models\Entities' => PATH_MODELS . 'entities' . DIRECTORY_SEPARATOR,
+                    APP_NAMESPACE . '\Models\Services' => PATH_MODELS . 'services' . DIRECTORY_SEPARATOR,
+                    APP_NAMESPACE . '\Models\Repositories' => PATH_MODELS . 'repositories' . DIRECTORY_SEPARATOR,
+                ))
                ->register();
     }
 

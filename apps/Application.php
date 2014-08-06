@@ -7,6 +7,7 @@
 namespace PhalconSkeletons;
 
 // Services are globally registered in this file
+use Phalcon\Exception;
 use Phalcon\Loader;
 use Phalcon\Mvc\Router;
 use Phalcon\DI\FactoryDefault;
@@ -18,174 +19,302 @@ use Phalcon\Session\Adapter\Files as SessionAdapter;
 
 class Application extends \Phalcon\Mvc\Application
 {
-    // @todo: get those values from application (global) config
-    protected $debug = true;
-    protected $appMode = '';
-    protected $appModes = array('development', 'testing', 'staging', 'live');
+    const ENV_LIVE = 'live';
+    const ENV_STAGING = 'staging';
+    const ENV_TESTING = 'testing';
+    const ENV_DEVELOPMENT = 'development';
 
-    protected $modulesConfig = array();
-    protected $appDefaultModule = '';
+    private $_env = '';
+    private $_debug = true;
+    private $_appConfig = null;
+    private $_systemLogger = null;
+    private $_modulesConfig = array();
+
+    public function __construct($dependencyInjector = null)
+    {
+        if ( !($this->_systemLogger instanceof \Phalcon\Logger\Adapter\File) ) {
+            $this->_systemLogger = new SystemLogger(PATH_LOGS . 'system.log');
+        }
+        parent::__construct($dependencyInjector);
+    }
 
     /**
-     * @param string $defaultModule
+     * Application main cycle - setups auto load, modules, models,
+     * application services and so on.
+     *
      * @throws \Exception
-     * @todo - still experimental variant, but looks good :P
      */
-    public function init($defaultModule = 'frontend')
+    public function load($config = null, $env = '')
     {
+        $this->_bootstrapLog();
+
+        if ($config instanceof \Phalcon\Config) {
+            $this->_appConfig = $config;
+        }
+
+        if ( !empty($env) ) {
+            $this->setEnv($env);
+        }
+
         try {
-            $this->appDefaultModule = (string) $defaultModule;
-            $appConfig = include PATH_ROOT . 'config' . DIRECTORY_SEPARATOR . 'application.php';
-
-            // Log some things ...
-            $systemLogger = new SystemLogger(PATH_LOGS . 'system.log');
-
-            $systemLogger->debug('* Application bootstrap begin ['.__CLASS__.']');
-            $systemLogger->debug('* Registered application namespace: ' . APP_NAMESPACE);
-            $systemLogger->debug('* Registered application root path: ' . PATH_ROOT);
-
-            // @todo : add registered namespaces as well
-            $systemLogger->debug('* Registered application directories :');
-            $systemLogger->debug('    apps : ' . PATH_APPS);
-            $systemLogger->debug('    models : ' . PATH_MODELS);
-            $systemLogger->debug('    modules : ' . PATH_MODULES);
-            $systemLogger->debug('    data : ' . PATH_DATA);
-            $systemLogger->debug('    logs : ' . PATH_LOGS);
-            $systemLogger->debug('    library : ' . PATH_LIBRARY);
-            $systemLogger->debug('    vendor : ' . PATH_VENDOR);
-            $systemLogger->debug('');
-
-            // Init autoloaders
-            $systemLogger->debug('* Initializing autoloaders');
-
-            $loader = new Loader();
-            $loader->registerNamespaces(array(
-                'Phalcon' => PATH_LIBRARY . 'Phalcon' . DIRECTORY_SEPARATOR,
-                APP_NAMESPACE . '\Models\Entities' => PATH_MODELS . 'entities' . DIRECTORY_SEPARATOR,
-                APP_NAMESPACE . '\Models\Services' => PATH_MODELS . 'services' . DIRECTORY_SEPARATOR,
-                APP_NAMESPACE . '\Models\Repositories' => PATH_MODELS . 'repositories' . DIRECTORY_SEPARATOR,
-            ))
-            ->registerDirs(array(
-                PATH_VENDOR,
-                PATH_LIBRARY
-            ))
-            ->register();
-            // var_dump($loader); exit;
-
-            // Init a DI
-            $systemLogger->debug('* Initializing Dependency Injector');
-            $di = new \Phalcon\DI\FactoryDefault();
-
-            $systemLogger->debug('** Setting up config service [appConfig] in DI');
-            $di->set('appConfig', function() use ($appConfig) {
-                return $appConfig;
-            }, true); // shared
-
-            $systemLogger->debug('** Setting up session service [session] in DI');
-            $di->set('session', function() {
-                $session = new SessionAdapter();
-                $session->start();
-                return $session;
-            }, true); // shared
-
-            $systemLogger->debug('** Setting up database service [db] in DI');
-            $di->set('db', function () use ($appConfig) {
-                return new DbAdapter(array(
-                    "host" => $appConfig->database->host,
-                    "username" => $appConfig->database->username,
-                    "password" => $appConfig->database->password,
-                    "dbname" => $appConfig->database->dbname
-                ));
-            }, true); // shared
-
-            $systemLogger->debug('** Setting up url service [url] in DI');
-            $di->set('url', function () {
-                $url = new UrlResolver();
-                $url->setBaseUri('/');
-
-                return $url;
-            });
-
-            $systemLogger->debug('** Setting up router service [router] in DI');
-            $modulesConfig = $this->_getModulesConfig();
-            $di->set('router', function() use ($defaultModule, $modulesConfig) {
-                $router = new Router(false);
-                $router->setDefaultModule($defaultModule);
-
-                $router->add('/', array(
-                    'module' => "frontend",
-                    'controller' => "index",
-                    'action' => "index"
-                ))->setName('front-index');
-
-                foreach ($modulesConfig as $moduleName => $module) {
-                    // do not route default module
-                    if ($defaultModule == $moduleName) continue;
-
-                    $router->add('#^/'.$moduleName.'(|/)$#', array(
-                        'module' => $moduleName,
-                        'controller' => 'index',
-                        'action' => 'index',
-                    ));
-
-                    $router->add('#^/'.$moduleName.'/([a-zA-Z0-9\_]+)[/]{0,1}$#', array(
-                        'module' => $moduleName,
-                        'controller' => 1,
-                    ));
-
-                    $router->add('#^/'.$moduleName.'[/]{0,1}([a-zA-Z0-9\_]+)/([a-zA-Z0-9\_]+)(/.*)*$#', array(
-                        'module' => $moduleName,
-                        'controller' => 1,
-                        'action' => 2,
-                        'params' => 3,
-                    ));
-                }
-
-                return $router;
-            });
-
-            $systemLogger->debug('** Dependance Injector is ready to use');
-            $this->setDI($di);
-
-            $systemLogger->debug('* Register application modules');
-            $this->registerModules($modulesConfig);
-
-            $systemLogger->debug('* Application bootstrap complete');
-            $systemLogger->debug('* Processing request and return response');
-            $this->handle()->send();
-
-            // var_dump(Services::getService('User')->getLast()); exit;
-            // var_dump($di->get('router')); exit;
-            // var_dump($this->_getModulesConfig(), get_include_path(), get_required_files(), $loader, get_declared_classes());
+            $this->_setAutoload()
+                 ->_loadDI()
+                 ->_loadModules()
+                 ->handle()
+                 ->send();
         } catch(\Exception $e) {
-            throw new \Exception($e);
+            throw new \Phalcon\Exception('Unable to load application : '.$e->getMessage());
         }
     }
 
-    private function _registerDefaultServices()
+    /**
+     * Set application debug mode
+     *
+     * @param $dbgMode
+     */
+    public function setDebug($dbgMode)
     {
+        if ( true === $this->_appConfig->application->debug ) {
+            error_reporting(E_ALL);
 
+            ini_set('log_errors', true);
+            ini_set('report_memleaks', true);
+            ini_set('display_errors', true);
+            ini_set('display_startup_errors', true);
+
+            $this->_debug = true;
+            return true;
+        }
+
+        if (true === (bool) $dbgMode) {
+            error_reporting(E_ALL);
+
+            ini_set('log_errors', true);
+            ini_set('report_memleaks', true);
+            ini_set('display_errors', true);
+            ini_set('display_startup_errors', true);
+
+            $this->_debug = true;
+        } else {
+            error_reporting(0);
+
+            ini_set('log_errors', false);
+            ini_set('report_memleaks', false);
+            ini_set('display_errors', false);
+            ini_set('display_startup_errors', false);
+
+            $this->_debug = false;
+        }
+
+        throw new \Exception('asdasdaaaaaaaaaaaaaaaaaaaaaa');
     }
 
-    private function _getModulesConfig()
+    /**
+     * Whether debug application mode is activated.
+     *
+     * @return bool
+     */
+    public function isDebug()
     {
+        return $this->_debug;
+    }
+
+    /**
+     * Register application config
+     *
+     * @param \Phalcon\Config $config
+     * @return object \Phalcon\Mvc\Application
+     */
+    public function setConfig(\Phalcon\Config $config)
+    {
+        $this->_appConfig = $config;
+        return $this;
+    }
+
+    /**
+     * Application config getter
+     *
+     * @return object \Phalcon\Config
+     */
+    public function getConfig()
+    {
+        return $this->_appConfig();
+    }
+
+
+    public function setEnv($env)
+    {
+        switch ( $env ) {
+            case self::ENV_TESTING:
+            case self::ENV_DEVELOPMENT:
+                $this->_env = $env;;
+                $this->setDebug(true);
+                return $this;
+            break;
+
+            case self::ENV_LIVE:
+            case self::ENV_STAGING:
+                $this->_env = $env;
+                $this->setDebug(false);
+                return $this;
+            break;
+
+            default:
+                throw new \Exception('Invalid or no environment set : ' . $env);
+        }
+    }
+
+    public function getEnv()
+    {
+        return $this->_env;
+    }
+
+    public function getSystemLog()
+    {
+        return $this->_systemLogger;
+    }
+
+    private function _loadDI()
+    {
+        $di = new FactoryDefault();
+
+        $di->set('session', function() {
+            $session = new SessionAdapter();
+            $session->start();
+            return $session;
+        }, true); // shared
+
+        $dbConfig = $this->_appConfig->database;
+        $di->set('db', function() use ($dbConfig) {
+            return new DbAdapter(array(
+                'host' => $dbConfig->host,
+                'username' => $dbConfig->username,
+                'password' => $dbConfig->password,
+                'dbname' => $dbConfig->dbname
+            ));
+        }, true); // shared
+
+        $baseUri = $this->_appConfig->application->baseUri;
+        $di->set('url', function() use ($baseUri) {
+            $url = new UrlResolver();
+            $url->setBaseUri($baseUri);
+
+            return $url;
+        });
+
+        $enabledModules = $this->_appConfig->application->modules;
+        $defaultModule = $this->_appConfig->application->defaultModule;
+        $di->set('router', function() use ($enabledModules, $defaultModule) {
+            $router = new Router(false);
+            $router->setDefaultModule($defaultModule);
+
+            $router->add('/', array(
+                'module' => "frontend",
+                'controller' => "index",
+                'action' => "index"
+            ))->setName('front-index');
+
+            foreach ($enabledModules as $moduleName => $isModuleEnabled) {
+                // do not route default module or disabled modules
+                if ($defaultModule == $moduleName || true !== $isModuleEnabled) continue;
+
+                $router->add('#^/'.$moduleName.'(|/)$#', array(
+                    'module' => $moduleName,
+                    'controller' => 'index',
+                    'action' => 'index',
+                ));
+
+                $router->add('#^/'.$moduleName.'/([a-zA-Z0-9\_]+)[/]{0,1}$#', array(
+                    'module' => $moduleName,
+                    'controller' => 1,
+                ));
+
+                $router->add('#^/'.$moduleName.'[/]{0,1}([a-zA-Z0-9\_]+)/([a-zA-Z0-9\_]+)(/.*)*$#', array(
+                    'module' => $moduleName,
+                    'controller' => 1,
+                    'action' => 2,
+                    'params' => 3,
+                ));
+            }
+
+            return $router;
+        });
+
+        $this->setDI($di);
+        return $this;
+    }
+
+    private function _loadModules()
+    {
+        if ( empty($this->_appConfig->application->modules) ) {
+            throw new \Phalcon\Exception('Unable to register any modules. Check your modules folder and config.');
+        }
+
         try {
             $installedModulesDir = new \DirectoryIterator(PATH_MODULES);
             foreach ($installedModulesDir as $moduleDir) {
-                if (!$moduleDir->isDot() && $moduleDir->isDir()) {
+                if ( !$moduleDir->isDot() && $moduleDir->isDir() ) {
                     $moduleName = $moduleDir->getFilename();
-                    $className = APP_NAMESPACE .'\\Modules' . '\\'. \Phalcon\Text::camelize($moduleName) . '\\Module';
-                    $classPath = PATH_MODULES . $moduleName . DIRECTORY_SEPARATOR . 'Module.php';
+                    if ( (isset($moduleName)) && true === $this->_appConfig->application->modules[$moduleName]) {
+                        $className = APP_NAMESPACE .'\\Modules' . '\\'. \Phalcon\Text::camelize($moduleName) . '\\Module';
+                        $classPath = PATH_MODULES . $moduleName . DIRECTORY_SEPARATOR . 'Module.php';
+                        if ( !file_exists($classPath) ) {
+                            throw new \Phalcon\Exception('Unable to load class file '.$classPath.' for module '.$className);
+                        }
 
-                    $this->modulesConfig[$moduleName] = array(
-                        'className' => $className,
-                        'path' => $classPath
-                    );
+                        $this->_modulesConfig[$moduleName] = array(
+                            'className' => $className,
+                            'path' => $classPath
+                        );
+                    }
                 }
             }
-            return $this->modulesConfig;
+
+            if ( empty($this->_modulesConfig) ) {
+                throw new \Phalcon\Exception('There is no modules configured.');
+            }
+
+            $this->registerModules($this->_modulesConfig);
+            return $this;
         } catch (\Exception $e) {
-            die('Unable to register installed modules !');
+            // @todo: log
+            throw new \Phalcon\Exception('Error occured while registering modules configuration : '. $e->getMessage());
         }
+    }
+
+    private function _setAutoload()
+    {
+        $loader = new Loader();
+        if ( !empty($this->_appConfig->autoload->namespaces)) {
+            $ns = array();
+            foreach ( $this->_appConfig->autoload->namespaces as $nsName => $nsPath ) {
+                $ns[$nsName] = PATH_ROOT . $nsPath;
+            }
+
+            $loader->registerNamespaces($ns);
+        }
+
+        // $loader->registerDirs(array(PATH_VENDOR, PATH_LIBRARY));
+        $loader->register();
+        return $this;
+    }
+
+    private function _bootstrapLog()
+    {
+        // Log some things ...
+        $this->_systemLogger->debug('* Application bootstrap begin ['.__CLASS__.']');
+        $this->_systemLogger->debug('* Registered application namespace: ' . APP_NAMESPACE);
+        $this->_systemLogger->debug('* Registered application root path: ' . PATH_ROOT);
+
+        // @todo : add registered namespaces as well
+        $this->_systemLogger->debug('* Registered application directories :');
+        $this->_systemLogger->debug('    apps : ' . PATH_APPS);
+        $this->_systemLogger->debug('    models : ' . PATH_MODELS);
+        $this->_systemLogger->debug('    modules : ' . PATH_MODULES);
+        $this->_systemLogger->debug('    data : ' . PATH_DATA);
+        $this->_systemLogger->debug('    logs : ' . PATH_LOGS);
+        $this->_systemLogger->debug('    library : ' . PATH_LIBRARY);
+        $this->_systemLogger->debug('    vendor : ' . PATH_VENDOR);
+        $this->_systemLogger->debug('');
     }
 }
