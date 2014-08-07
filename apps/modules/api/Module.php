@@ -19,9 +19,9 @@ class Module implements ModuleDefinitionInterface
             'Modules\Api\Controllers' => __DIR__ . '/controllers/',
 
             // registering global models
-            '\Models\Entities' => PATH_MODELS . 'entities' . DIRECTORY_SEPARATOR,
-            '\Models\Services' => PATH_MODELS . 'services' . DIRECTORY_SEPARATOR,
-            '\Models\Repositories' => PATH_MODELS . 'repositories' . DIRECTORY_SEPARATOR,
+            'Models\Entities' => PATH_MODELS . 'entities' . DIRECTORY_SEPARATOR,
+            'Models\Services' => PATH_MODELS . 'services' . DIRECTORY_SEPARATOR,
+            'Models\Repositories' => PATH_MODELS . 'repositories' . DIRECTORY_SEPARATOR,
         ))
         ->register();
     }

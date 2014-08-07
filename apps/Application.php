@@ -15,7 +15,6 @@ use Phalcon\Mvc\Url as UrlResolver;
 use Phalcon\Logger\Adapter\File as SystemLogger;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
 use Phalcon\Session\Adapter\Files as SessionAdapter;
-// use \PhalconTests\Models\Services\Services as Services;
 
 class Application extends \Phalcon\Mvc\Application
 {
@@ -32,9 +31,7 @@ class Application extends \Phalcon\Mvc\Application
 
     public function __construct($dependencyInjector = null)
     {
-        if ( !($this->_systemLogger instanceof \Phalcon\Logger\Adapter\File) ) {
-            $this->_systemLogger = new SystemLogger(PATH_LOGS . 'system.log');
-        }
+        $this->_systemLogger = new SystemLogger(PATH_LOGS . 'system.log');
         parent::__construct($dependencyInjector);
     }
 

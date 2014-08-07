@@ -13,15 +13,18 @@ CREATE  TABLE IF NOT EXISTS `phalcon-skeletons`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `email` VARCHAR(100) NOT NULL default '',
   `nickname` VARCHAR(200) NOT NULL default '',
-  `fullname` VARCHAR(45) NOT NULL default '',
+  `first_name` VARCHAR(200) NOT NULL default '',
+  `last_name` VARCHAR(200) NOT NULL default '',
   `password` VARCHAR(40) NOT NULL default '',
+  `banned` TINYINT(1) NOT NULL default 0,
+  `deleted` TINYINT(1) NOT NULL default 0,
   `created` TIMESTAMP NOT NULL default CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) ,
   UNIQUE KEY (`email`)
 ) ENGINE = InnoDB DEFAULT CHARSET utf8;
 
-INSERT INTO `phalcon-skeletons`.`users` SET email='admin@cod3r.net', nickname='admin', fullname='Admin', password='1234';
-INSERT INTO `phalcon-skeletons`.`users` SET email='jdoe@cod3r.net', nickname='jdoe', fullname='John Doe', password='5678';
+INSERT INTO `phalcon-skeletons`.`users` SET email='admin@cod3r.net', nickname='admin', first_name='Admin',last_name='Adminski';
+INSERT INTO `phalcon-skeletons`.`users` SET email='jdoe@cod3r.net', nickname='jdoe', first_name='John', last_name='Doe';
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

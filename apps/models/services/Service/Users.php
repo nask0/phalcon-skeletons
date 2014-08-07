@@ -2,10 +2,10 @@
 namespace Models\Services\Service;
 use Models\Repositories\Repositories as Repositories;
 
-class User
+class Users
 {
     public function getLast()
     {
-        return Repositories::getRepository('User')->getLast();
+        return Repositories::getRepository('Users')->getLastFive();
     }
 }

@@ -2,45 +2,97 @@
 namespace Models\Entities;
 
 use Phalcon\Mvc\Model\Validator\Email as Email;
+use Phalcon\Mvc\Model\Behavior\SoftDelete;
 
 class User extends \Phalcon\Mvc\Model
 {
+    const ACTION_NO = 0;
+    const ACTION_YES = 1;
+
     /**
-     *
+     * @db
      * @var integer
      */
     protected $id;
 
     /**
-     *
+     * @db
      * @var string
      */
     protected $email;
      
     /**
-     *
+     * @db
      * @var string
      */
     protected $nickname;
 
     /**
-     *
+     * @db
      * @var string
      */
-    protected $fullname;
+    protected $first_name;
+
+    /**
+     * @db
+     * @var string
+     */
+    protected $last_name;
      
     /**
-     *
+     * @db
      * @var string
      */
     protected $password;
+
+    /**
+     * @db
+     * @var int 0/1
+     */
+    protected $banned;
+
+    /**
+     * @db
+     * @var int 0/1
+     */
+    protected $deleted = 0;
      
     /**
-     *
+     * @db
      * @var string
      */
     protected $created;
-     
+
+    public function initialize()
+    {
+        $this->setSource('users');
+
+        /**
+         * SQL UPDATE statements are by default created with every column defined in the model
+         * (full all-field SQL update). You can change specific models to make dynamic updates,
+         * in this case, just the fields that had changed are used to create the final SQL statement.
+         * In some cases this could improve the performance by reducing the traffic between the application
+         * and the database server, this specially helps when the table has blob/text fields
+         */
+        $this->useDynamicUpdate(true);
+
+        // Skips fields/columns on both INSERT/UPDATE operations
+        // $this->skipAttributes(array('updated'));
+
+        // Skips only when inserting
+        $this->skipAttributesOnCreate(array('id', 'created'));
+
+        // Skips only when updating
+        // $this->skipAttributesOnUpdate(array(''));
+
+        /*$this->addBehavior(
+            new SoftDelete(array(
+                'field' => 'deleted',
+                'value' => '1'
+            ))
+        );*/
+    }
+
     /**
      * Method to set the value of field iduser
      *
@@ -66,18 +118,6 @@ class User extends \Phalcon\Mvc\Model
     }
 
     /**
-     * Method to set the value of field username
-     *
-     * @param string $username
-     * @return $this
-     */
-    public function setFullname($fullname)
-    {
-        $this->fullname = (string) $fullname;
-        return $this;
-    }
-
-    /**
      * Method to set the value of field email
      *
      * @param string $email
@@ -98,7 +138,6 @@ class User extends \Phalcon\Mvc\Model
     public function setPassword($password)
     {
         $this->password = $password;
-
         return $this;
     }
 
@@ -135,16 +174,6 @@ class User extends \Phalcon\Mvc\Model
     }
 
     /**
-     * Returns the value of field username
-     *
-     * @return string
-     */
-    public function getFullname()
-    {
-        return $this->username;
-    }
-
-    /**
      * Returns the value of field email
      *
      * @return string
@@ -164,6 +193,16 @@ class User extends \Phalcon\Mvc\Model
         return $this->password;
     }
 
+    public function setDeleted($del)
+    {
+        $this->deleted = (int) $del;
+    }
+
+    public function getDeleted()
+    {
+        return $this->deleted;
+    }
+
     /**
      * Returns the value of field created
      *
@@ -179,22 +218,15 @@ class User extends \Phalcon\Mvc\Model
      */
     public function validation()
     {
-
         $this->validate(
             new Email(
                 array(
-                    "field"    => "email",
-                    "required" => true,
+                    'field' => 'email',
+                    'required' => true
                 )
             )
         );
-        if ($this->validationHasFailed() == true) {
-            return false;
-        }
-    }
 
-    public function getSource()
-    {
-        return 'users';
+        return ($this->validationHasFailed() == true);
     }
 }
