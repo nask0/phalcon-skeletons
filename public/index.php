@@ -40,7 +40,7 @@ define('APP_ENV', $env);
 define('APP_NAMESPACE', \Phalcon\Text::camelize(basename(PATH_ROOT)));
 
 // load application bootstrap class
-$appFile = PATH_APPS . 'Application.php';
+$appFile = PATH_APPS . 'Bootstrap.php';
 if ( !file_exists($appFile)) {
     die('Unable to find application file in : ' . $appFile);
 } else {
@@ -48,9 +48,9 @@ if ( !file_exists($appFile)) {
 }
 
 try {
-    $appClass = APP_NAMESPACE . '\\Application';
+    $appClass = '\\Apps\\Bootstrap';
     if ( !class_exists($appClass) ) {
-        die('Unable to find application class '.$appClass . ' in ' . PATH_APPS . 'Application.php');
+        die('Unable to find application class '.$appClass . ' in ' . PATH_APPS . 'Bootstrap.php');
     }
 
     $application = new $appClass();

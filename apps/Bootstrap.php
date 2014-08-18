@@ -4,7 +4,7 @@
  * Inspired from Multiple-Service-Layer sample architecture (see https://github.com/phalcon/mvc).
  * Use some kind of "Shared-Service-Layer" for database crud/orm whatever you like to call it.
  */
-namespace PhalconSkeletons;
+namespace Apps;
 
 // Services are globally registered in this file
 use Phalcon\Exception as PhalconException;
@@ -16,7 +16,7 @@ use Phalcon\Logger\Adapter\File as SystemLogger;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
 use Phalcon\Session\Adapter\Files as SessionAdapter;
 
-class Application extends \Phalcon\Mvc\Application
+class Bootstrap extends \Phalcon\Mvc\Application
 {
     const ENV_LIVE = 'live';
     const ENV_STAGING = 'staging';
