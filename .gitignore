@@ -1,2 +1,3 @@
 .idea
-data/*
+data/logs/*
+config/development.php
