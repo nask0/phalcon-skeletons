@@ -12,7 +12,7 @@ return new \Phalcon\Config(array(
     'database' => array(
         'adapter'  => 'Mysql',
         'host'     => 'localhost',
-        'username' => '',
+        'username' => 'root',
         'password' => '',
         'dbname'   => 'phalcon-skeletons',
     )

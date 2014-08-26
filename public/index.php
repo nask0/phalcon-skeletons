@@ -1,6 +1,9 @@
 <?php
 /**
  * Application main cycle.
+ *
+ * --
+ * use Phalcon\Logger\Adapter\File as SystemLogger;
  */
 ini_set('log_errors', true);
 ini_set('report_memleaks', true);
@@ -22,42 +25,31 @@ define('PATH_MODULES', PATH_APPS . 'modules' . DIRECTORY_SEPARATOR);
 
 // load env config
 if ( !file_exists(PATH_CONFIG . 'env.php') ) {
-    die('Unable to determine environment. Check env.php file in config folder ['.PATH_CONFIG .']');
+    die('Unable to determine environment. Check for valid env.php file in config folder ['.PATH_CONFIG .']');
 }
-$env = require_once PATH_CONFIG . 'env.php';
+$env = require PATH_CONFIG . 'env.php';
+if ( !is_string($env) ) {
+    die('Unable to determine environment. Check for valid env.php file in config folder ['.PATH_CONFIG .']');
+}
 
 // load config according to environment
-if ( !file_exists(PATH_CONFIG . 'env.php') ) {
+if ( !file_exists(PATH_CONFIG . $env . '.php') ) {
     die('Unable to load config file ' . PATH_CONFIG . $env.'.php');
 }
-$config = require_once PATH_CONFIG . $env . '.php';
-if ( !($config instanceof \Phalcon\Config) ) {
-    die('Unable to load config object from file config/'.$env.'.php');
-}
 
-// application specific definitions
-define('APP_ENV', $env);
-define('APP_NAMESPACE', \Phalcon\Text::camelize(basename(PATH_ROOT)));
-
-// load application bootstrap class
-$appFile = PATH_APPS . 'Bootstrap.php';
-if ( !file_exists($appFile)) {
-    die('Unable to find application file in : ' . $appFile);
-} else {
-    require_once $appFile;
+$appConfig = require_once PATH_CONFIG . 'application.php';
+$envConfig = require_once PATH_CONFIG . $env . '.php';
+if ( !($appConfig instanceof \Phalcon\Config) || !($envConfig instanceof \Phalcon\Config)) {
+    die('Unable to load needed config objects. Check your config folder.');
 }
+$envConfig->merge($appConfig);
+
+// boot application
+require_once PATH_LIBRARY . 'Cod3r/Application/Bootstrap.php';
 
 try {
-    $appClass = '\\Apps\\Bootstrap';
-    if ( !class_exists($appClass) ) {
-        die('Unable to find application class '.$appClass . ' in ' . PATH_APPS . 'Bootstrap.php');
-    }
-
-    $application = new $appClass();
-    $application->setConfig($config)
-                ->setEnv($env)
-                ->load();
-
+    $application = new \Cod3r\Application\Bootstrap($env, $envConfig);
+    $application->load();
 } catch (Phalcon\Exception $e) {
     echo $e->getMessage();
 } catch (PDOException $e) {

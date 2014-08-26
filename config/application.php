@@ -1,4 +1,5 @@
 <?php
+// Note that this configuration may be overwritten by the environment config file (e.g. local.php / development.php)
 return new \Phalcon\Config(array(
     'application' => array(
         // explicitly set application debug mode to overwrite environment settings
@@ -9,7 +10,6 @@ return new \Phalcon\Config(array(
             'api' => true,
             'frontend' => true
         ),
-        'enableAllModules' => false,
         'defaultModule' => 'frontend'
-    )
+    ),
 ));

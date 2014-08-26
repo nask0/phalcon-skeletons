@@ -11,19 +11,5 @@ return new \Phalcon\Config(array(
         ),
         'enableAllModules' => false,
         'defaultModule' => 'frontend'
-    ),
-    'autoload' => array(
-        'classes' => array(),
-        'folders' => array(),
-        'namespaces' => array(
-            'Phalcon' => 'library/Phalcon'
-        )
-    ),
-    'database' => array(
-        'adapter'  => 'Mysql',
-        'host'     => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'dbname'   => 'phalcon-skeletons',
-    ),
+    )
 ));

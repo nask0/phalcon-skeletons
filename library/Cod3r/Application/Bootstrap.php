@@ -30,7 +30,7 @@ class Bootstrap extends \Phalcon\Mvc\Application
     private $_systemLogger = null;
     private $_modulesConfig = array();
 
-    public function __construct($env, \Phalcon\Config $config, $syslog = null)
+    public function __construct($env, \Phalcon\Config $config, $syslog = null, $di = null)
     {
         $this->_appConfig = $config;
         if ( !($syslog instanceof \Phalcon\Logger\Adapter\File) ) {
@@ -38,6 +38,8 @@ class Bootstrap extends \Phalcon\Mvc\Application
         } else {
             $this->_systemLogger = $syslog;
         }
+
+        parent::__construct($di);
     }
 
     /**
