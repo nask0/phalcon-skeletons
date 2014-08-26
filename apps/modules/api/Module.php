@@ -16,8 +16,9 @@ class Module implements ModuleDefinitionInterface
     {
         $loader = new Loader();
         $loader->registerNamespaces(array(
-            'Modules\Api\Controllers' => __DIR__ . '/controllers/',
+            // 'Modules\Api\Controllers' => __DIR__ . '/controllers/',
 
+            // @todo : register and local models if any
             // registering global models
             'Models\Entities' => PATH_MODELS . 'entities' . DIRECTORY_SEPARATOR,
             'Models\Services' => PATH_MODELS . 'services' . DIRECTORY_SEPARATOR,
@@ -44,7 +45,6 @@ class Module implements ModuleDefinitionInterface
          */
         $di['view'] = function () {
             $view = new View();
-            // $view->setViewsDir(__DIR__ . '/views/');
             $view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_NO_RENDER);
             $view->disable();
             return $view;

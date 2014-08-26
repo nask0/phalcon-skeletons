@@ -4,7 +4,7 @@
  * Inspired from Multiple-Service-Layer sample architecture (see https://github.com/phalcon/mvc).
  * Use some kind of "Shared-Service-Layer" for database crud/orm whatever you like to call it.
  */
-namespace Apps;
+namespace Cod3r\Application;
 
 // Services are globally registered in this file
 use Phalcon\Exception as PhalconException;
@@ -19,6 +19,7 @@ use Phalcon\Session\Adapter\Files as SessionAdapter;
 class Bootstrap extends \Phalcon\Mvc\Application
 {
     const ENV_LIVE = 'live';
+    const ENV_LOCAL = 'local';
     const ENV_STAGING = 'staging';
     const ENV_TESTING = 'testing';
     const ENV_DEVELOPMENT = 'development';
@@ -29,10 +30,14 @@ class Bootstrap extends \Phalcon\Mvc\Application
     private $_systemLogger = null;
     private $_modulesConfig = array();
 
-    public function __construct($dependencyInjector = null)
+    public function __construct($env, \Phalcon\Config $config, $syslog = null)
     {
-        $this->_systemLogger = new SystemLogger(PATH_LOGS . 'system.log');
-        parent::__construct($dependencyInjector);
+        $this->_appConfig = $config;
+        if ( !($syslog instanceof \Phalcon\Logger\Adapter\File) ) {
+            $this->_systemLogger = new SystemLogger(PATH_LOGS . 'system.log');
+        } else {
+            $this->_systemLogger = $syslog;
+        }
     }
 
     /**
@@ -54,11 +59,11 @@ class Bootstrap extends \Phalcon\Mvc\Application
         }
 
         try {
-            $this->_setAutoload()
-                 ->_loadDI()
-                 ->_loadModules()
-                 ->handle()
-                 ->send();
+            $this->_setAutoload();
+            $this->_loadDI();
+            $this->_loadModules();
+
+            $this->handle()->send();
         } catch(\Exception $e) {
             throw new PhalconException('Unable to load application : '.$e->getMessage());
         }
@@ -115,18 +120,6 @@ class Bootstrap extends \Phalcon\Mvc\Application
     }
 
     /**
-     * Register application config
-     *
-     * @param \Phalcon\Config $config
-     * @return object \Phalcon\Mvc\Application
-     */
-    public function setConfig(\Phalcon\Config $config)
-    {
-        $this->_appConfig = $config;
-        return $this;
-    }
-
-    /**
      * Application config getter
      *
      * @return object \Phalcon\Config
@@ -137,6 +130,13 @@ class Bootstrap extends \Phalcon\Mvc\Application
     }
 
 
+    /**
+     * Set application environment.
+     *
+     * @param string $env
+     * @return object $this
+     * @throws \Phalcon\Exception
+     */
     public function setEnv($env)
     {
         switch ( $env ) {
@@ -145,17 +145,17 @@ class Bootstrap extends \Phalcon\Mvc\Application
                 $this->_env = $env;;
                 $this->setDebug(true);
                 return $this;
-            break;
+                break;
 
             case self::ENV_LIVE:
             case self::ENV_STAGING:
                 $this->_env = $env;
                 $this->setDebug(false);
                 return $this;
-            break;
+                break;
 
             default:
-                throw new \Exception('Invalid or no environment set : ' . $env);
+                throw new \Phalcon\Exception('Invalid or no environment set : ' . $env);
         }
     }
 
@@ -164,11 +164,21 @@ class Bootstrap extends \Phalcon\Mvc\Application
         return $this->_env;
     }
 
+    /**
+     * Get system logger.
+     *
+     * @return SystemLogger
+     */
     public function getSystemLog()
     {
         return $this->_systemLogger;
     }
 
+    /**
+     * Setup default dependency injector.
+     *
+     * @return object Bootstrap
+     */
     private function _loadDI()
     {
         $di = new FactoryDefault();
@@ -187,7 +197,7 @@ class Bootstrap extends \Phalcon\Mvc\Application
                 'password' => $dbConfig->password,
                 'dbname' => $dbConfig->dbname
             ));
-        }, true); // shared
+        });
 
         $baseUri = $this->_appConfig->application->baseUri;
         $di->set('url', function() use ($baseUri) {
@@ -239,6 +249,12 @@ class Bootstrap extends \Phalcon\Mvc\Application
         return $this;
     }
 
+    /**
+     * Load registered modules.
+     *
+     * @return object \Phalcon\Mvc\Application
+     * @throws \Phalcon\Exception
+     */
     private function _loadModules()
     {
         if ( empty($this->_appConfig->application->modules) ) {
@@ -254,7 +270,7 @@ class Bootstrap extends \Phalcon\Mvc\Application
                         $className = '\\Modules' . '\\'. \Phalcon\Text::camelize($moduleName) . '\\Module';
                         $classPath = PATH_MODULES . $moduleName . DIRECTORY_SEPARATOR . 'Module.php';
                         if ( !file_exists($classPath) ) {
-                            throw new \Phalcon\Exception('Unable to load class file '.$classPath.' for module '.$className);
+                            throw new \Phalcon\Exception('Unable to load class '.$className.' from file: '.$classPath);
                         }
 
                         $this->_modulesConfig[$moduleName] = array(
@@ -269,8 +285,8 @@ class Bootstrap extends \Phalcon\Mvc\Application
                 throw new PhalconException('There is no modules configured.');
             }
 
+            // register enabled modules to application
             $this->registerModules($this->_modulesConfig);
-            return $this;
         } catch (\Exception $e) {
             // @todo: log
             throw new PhalconException('Error occured while registering modules configuration : '. $e->getMessage());
@@ -280,8 +296,8 @@ class Bootstrap extends \Phalcon\Mvc\Application
     /**
      * Set auto loading
      *
-     * @return object \Phalcon\Mvc\Application
-     * @todo
+     * @return object Bootstrap
+     * @todo: consider autoloading of_VENDOR and _LIBRARY paths.
      */
     private function _setAutoload()
     {
@@ -297,14 +313,12 @@ class Bootstrap extends \Phalcon\Mvc\Application
 
         // $loader->registerDirs(array(PATH_VENDOR, PATH_LIBRARY));
         $loader->register();
-        return $this;
     }
 
     private function _bootstrapLog()
     {
         // Log some things ...
         $this->_systemLogger->debug('* Application bootstrap begin ['.__CLASS__.']');
-        $this->_systemLogger->debug('* Registered application namespace: ' . APP_NAMESPACE);
         $this->_systemLogger->debug('* Registered application root path: ' . PATH_ROOT);
 
         // @todo : add registered namespaces as well
