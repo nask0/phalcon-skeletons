@@ -3,7 +3,6 @@ namespace Modules\Frontend;
 
 use Phalcon\Loader;
 use Phalcon\Mvc\View;
-use \Phalcon\Mvc\Dispatcher;
 use Phalcon\Mvc\ModuleDefinitionInterface;
 
 class Module implements ModuleDefinitionInterface
@@ -33,16 +32,11 @@ class Module implements ModuleDefinitionInterface
      */
     public function registerServices($di)
     {
-        //Registering a dispatcher
-        $di->set('dispatcher', function() {
-            $dispatcher = new Dispatcher();
-            $dispatcher->setDefaultNamespace('Modules\Frontend\Controllers');
-            return $dispatcher;
-        });
+        // Setting up module default controller's namespace
+        $di->get('dispatcher')
+            ->setDefaultNamespace('Modules\Frontend\Controllers');
 
-        /**
-         * Setting up the view component
-         */
+        // Setting up the view
         $di['view'] = function () {
             $view = new View();
             $view->setViewsDir(__DIR__ . '/views/');

@@ -3,8 +3,6 @@ namespace Modules\Api;
 
 use Phalcon\Loader;
 use Phalcon\Mvc\View;
-use Phalcon\Mvc\Router;
-use Phalcon\Mvc\Dispatcher;
 use Phalcon\Mvc\ModuleDefinitionInterface;
 
 class Module implements ModuleDefinitionInterface
@@ -16,7 +14,7 @@ class Module implements ModuleDefinitionInterface
     {
         $loader = new Loader();
         $loader->registerNamespaces(array(
-            // 'Modules\Api\Controllers' => __DIR__ . '/controllers/',
+            'Modules\Api\Controllers' => __DIR__ . '/controllers/',
 
             // @todo : register and local models if any
             // registering global models
@@ -34,11 +32,9 @@ class Module implements ModuleDefinitionInterface
      */
     public function registerServices($di)
     {
-        $di->set('dispatcher', function() {
-            $dispatcher = new Dispatcher();
-            $dispatcher->setDefaultNamespace('Modules\Api\Controllers');
-            return $dispatcher;
-        });
+        // Setting up module default controller's namespace
+        $di->get('dispatcher')
+           ->setDefaultNamespace('Modules\Api\Controllers');
 
         /**
          * Setting up the view component

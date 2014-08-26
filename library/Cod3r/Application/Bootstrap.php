@@ -10,6 +10,7 @@ namespace Cod3r\Application;
 use Phalcon\Exception as PhalconException;
 use Phalcon\Loader;
 use Phalcon\Mvc\Router;
+use Phalcon\Mvc\Dispatcher;
 use Phalcon\DI\FactoryDefault;
 use Phalcon\Mvc\Url as UrlResolver;
 use Phalcon\Logger\Adapter\File as SystemLogger;
@@ -33,11 +34,15 @@ class Bootstrap extends \Phalcon\Mvc\Application
     public function __construct($env, \Phalcon\Config $config, $syslog = null, $di = null)
     {
         $this->_appConfig = $config;
+        $this->setEnv($env);
+
         if ( !($syslog instanceof \Phalcon\Logger\Adapter\File) ) {
             $this->_systemLogger = new SystemLogger(PATH_LOGS . 'system.log');
         } else {
             $this->_systemLogger = $syslog;
+
         }
+        $this->_bootstrapLog();
 
         parent::__construct($di);
     }
@@ -48,18 +53,8 @@ class Bootstrap extends \Phalcon\Mvc\Application
      *
      * @throws \Exception
      */
-    public function load($config = null, $env = '')
+    public function load()
     {
-        $this->_bootstrapLog();
-
-        if ($config instanceof \Phalcon\Config) {
-            $this->_appConfig = $config;
-        }
-
-        if ( !empty($env) ) {
-            $this->setEnv($env);
-        }
-
         try {
             $this->_setAutoload();
             $this->_loadDI();
@@ -142,6 +137,7 @@ class Bootstrap extends \Phalcon\Mvc\Application
     public function setEnv($env)
     {
         switch ( $env ) {
+            case self::ENV_LOCAL:
             case self::ENV_TESTING:
             case self::ENV_DEVELOPMENT:
                 $this->_env = $env;;
@@ -201,14 +197,16 @@ class Bootstrap extends \Phalcon\Mvc\Application
             ));
         });
 
+        // Setting UrlResolver - this components aids in the generation of: URIs, URLs and Paths
         $baseUri = $this->_appConfig->application->baseUri;
         $di->set('url', function() use ($baseUri) {
             $url = new UrlResolver();
             $url->setBaseUri($baseUri);
 
             return $url;
-        });
+        }, true);
 
+        // Register default routes
         $enabledModules = $this->_appConfig->application->modules;
         $defaultModule = $this->_appConfig->application->defaultModule;
         $di->set('router', function() use ($enabledModules, $defaultModule) {
@@ -246,6 +244,12 @@ class Bootstrap extends \Phalcon\Mvc\Application
 
             return $router;
         });
+
+        // set dispatcher for use in modules
+        $di->set('dispatcher', function() {
+            $dispatcher = new Dispatcher();
+            return $dispatcher;
+        }, true);
 
         $this->setDI($di);
         return $this;
@@ -313,7 +317,6 @@ class Bootstrap extends \Phalcon\Mvc\Application
             $loader->registerNamespaces($ns);
         }
 
-        // $loader->registerDirs(array(PATH_VENDOR, PATH_LIBRARY));
         $loader->register();
     }
 
