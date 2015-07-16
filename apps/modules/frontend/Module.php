@@ -10,7 +10,7 @@ class Module implements ModuleDefinitionInterface
     /**
      * Registers the module auto-loader
      */
-    public function registerAutoloaders()
+    public function registerAutoloaders(\Phalcon\DiInterface $dependencyInjector = null)
     {
         $loader = new Loader();
         $loader->registerNamespaces(
@@ -30,7 +30,7 @@ class Module implements ModuleDefinitionInterface
      *
      * @param Phalcon\DI $di
      */
-    public function registerServices($di)
+    public function registerServices(\Phalcon\DiInterface $di = null)
     {
         // Setting up module default controller's namespace
         $di->get('dispatcher')
